@@ -18,12 +18,23 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    overflow: hidden;
+}
+
+.slideshow-container .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity q.5s ease-in-out;;
 }
 .shideshow-container .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slideshow-container .active{
+    opacity: 1;
 }
 
 .fade {
