@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Edbo Farms</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.jpg" alt="farm logo" width="150" height="150"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center justify-content-center" id="home">
+        <!--SlideShow-->
+        <div class="slideshow-container" >
+            <div class = "slide fade">
+                <img src="image1.jpeg" style="width: 100%;">
+            </div>
+            <div class = "slide fade">
+                <img src="image2.jpg" style="width: 100%;">
+            </div>
+            <div class = "slide fade">
+                <img src="image3.jpg" style="width: 100%;">
+            </div>
+            <div class = "slide fade">
+                <img src="image4.jpg" style="width: 100%;">
+            </div>
+            <div class = "slide fade">
+                <img src="image5.jpg" style="width: 100%;">
+            </div>
+            <div class = "slide fade">
+                <img src="image6.jpg" style="width: 100%;">
+            </div>
+            <div class = "slide fade">
+                <img src="image7.jpg" style="width: 100%;">
+            </div>
+
+        </div>
+        <!-- Text Content -->
+        <div class="text-center text-content">
+            <h1 class="display-4 text-white">Welcome to Edbo Farms</h1>
+            <p class="lead text-white">Fresh. Organic. Sustainable.</p>
+            <a href="#services" class="btn btn-success btn-lg">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container my-5" id="about">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">Edbo Farms is dedicated to providing fresh and organic produce directly from our fields to your table. We believe in sustainable farming practices and taking care of our environment.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="farm-image.jpg" alt="farm" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Organic produce straight from the farm.</li>
+                    <li>Sustainable farming techniques.</li>
+                    <li>Farm tours and community engagement.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-light py-5" id="services">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card shadow">
+                        <img src="produce.jpg" class="card-img-top" alt="produce">
+                        <div class="card-body">
+                            <h5 class="card-title">Organic Produce</h5>
+                            <p class="card-text">We offer a wide variety of organic fruits and vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card shadow">
+                        <img src="tour.jpg" class="card-img-top" alt="farm tours">
+                        <div class="card-body">
+                            <h5 class="card-title">Farm Tours</h5>
+                            <p class="card-text">Visit our farm and experience a day of sustainable farming.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card shadow">
+                        <img src="delivery.jpg" class="card-img-top" alt="delivery">
+                        <div class="card-body">
+                            <h5 class="card-title">Home Delivery</h5>
+                            <p class="card-text">Get fresh farm products delivered directly to your doorstep.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container py-5" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Edbo Farms. All Rights Reserved.</p>
+        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
