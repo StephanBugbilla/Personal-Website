@@ -291,7 +291,7 @@ footer p {
 
 .icon-link {
     display: inline-block; /* Makes links behave like inline elements */
-    margin: 0 50px; /* Horizontal space between icons */
+    margin: 0 20px; /* Horizontal space between icons */
     transition: transform 0.3s ease; /* Smooth transform on hover */
 }
 
